@@ -28,7 +28,7 @@ semaphore_t sem_PCA9555_Debounce;
 semaphore_t sem_Joystick_Debounce;;
 semaphore_t sem_UART;
 semaphore_t sem_PlatformUpdate;
-semaphore_t sem_Collision;
+semaphore_t sem_BallUpdate;
 
 /***********************************Semaphores**************************************/
 
@@ -52,6 +52,8 @@ void Read_Buttons(void);
 
 void Get_Joystick(void);
 void Score_Update(void);
+void Win_Condition(void);
+void Lose_Condition(void);
 
 /********************************Periodic Threads***********************************/
 
